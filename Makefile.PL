@@ -2,7 +2,9 @@ use inc::Module::Install;
 name 'Test-memcached';
 all_from 'lib/Test/memcached.pm';
 
-# requires '';
+requires 'Any::Moose';
+requires 'Test::TCP';
+requires 'File::Which';
 
 tests 't/*.t';
 author_tests 'xt';
